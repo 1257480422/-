@@ -43,7 +43,7 @@ public class NEW {
       System.out.println("100以内的偶数是：" + sum);
      */
       //定义scanner对象
-      Scanner sc=new Scanner(System.in);
+     /* Scanner sc=new Scanner(System.in);
       int ageUp=0;   //30上
       int ageDown=0;//30下
       for (int i=0;i<10;i++){
@@ -57,6 +57,28 @@ public class NEW {
       }
       System.out.println("超过30岁的人的比率是："+(ageUp/10.0*100)+"%");
       System.out.println("小于30岁的比率是："+(ageDown/10.0*100)+"%");
+   */
+      //10进制->2进制
+      /*Scanner sc=new Scanner(System.in);
+      System.out.println("请输入一个十进制数:");
+      int number=sc.nextInt();
+      String str="";
+      while(number!=0) {
+         int i = number % 2;
+         str =i+str; //反向赋值
+         number = number / 2;
 
+      }
+         System.out.println(str);
+   }*/
+   //求1！-10！
+   int sum=1;
+   int a=0;
+   for(int i=1;i<11;i++) {
+          sum*=i;
+          a=a+sum;
+             }
+         System.out.println("和："+sum);
+      }
    }
-}
+
