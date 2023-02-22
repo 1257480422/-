@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class NEW{
     public static void main(String[] args){
 
-        System.out.println("欢迎使用系统");
+       /* System.out.println("欢迎使用系统");
         System.out.println("添加用户信息");
         Scanner sc=new Scanner(System.in);
         System.out.println("请输入用户号码");
@@ -20,6 +20,22 @@ public class NEW{
         }else{
             System.out.println("会员号码输入错误");
         }
+        */
+        int time=(int)(Math.random()*40);
+        if(time<20){
+            System.out.println("恭喜进入决赛");
+            String sex=((int)(Math.random()*2))==0?"nv":"nan";
+            if(sex=="nv"){
+                System.out.println("欢迎进入女子组！");
+            }else{
+                System.out.println("欢迎进入男子组！");
+            }
+
+        }else{
+            System.out.println("很遗憾！");
+
+        }
+
 
 
 
