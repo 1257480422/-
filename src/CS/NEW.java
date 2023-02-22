@@ -1,7 +1,40 @@
 package CS;
 
 import java.util.Scanner;
+public class NEW{
+    public static void main(String[] args){
 
+        System.out.println("欢迎使用系统");
+        System.out.println("添加用户信息");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("请输入用户号码");
+        String number=sc.nextLine();//标准输入
+        System.out.println("请输入会员生日");
+        String birthday =sc.nextLine();
+        System.out.println("请输入会员积分");
+        String score=sc.nextLine();
+        if(number.length()==4){
+            System.out.println("会员信息如下：");
+            System.out.println(number+"\t"+birthday+"\t"+score);
+
+        }else{
+            System.out.println("会员号码输入错误");
+        }
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+/*
+import java.util.Scanner;
 public class NEW {
 
    public static void main(String[] args) {
@@ -72,13 +105,34 @@ public class NEW {
          System.out.println(str);
    }*/
    //求1！-10！
-   int sum=1;
+   /*int sum=1;
    int a=0;
    for(int i=1;i<11;i++) {
           sum*=i;
           a=a+sum;
              }
          System.out.println("和："+sum);
+
+            */
+      /* int r=3;
+       double PI=3.14;
+       double area=PI*r*r;
+       double length=2*PI*r;
+       if(area>=length)
+           System.out.println("面积大于周长");
+       else
+           System.out.println("面积小于周长");
+       */
+       //scanner
+        //创建文件扫描器对象 system.in是标准输入（装饰者模式）
+      // Scanner sc=new Scanner(System.in);
+      // System.out.println("请输入数据");
+      // String str=sc.nextLine();
+      // System.out.println(str);
+
+
+
+/*
       }
    }
-
+*/
