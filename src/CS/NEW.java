@@ -1,6 +1,58 @@
 package CS;
 
+import javafx.scene.layout.BorderStrokeStyle;
+
 import java.util.Scanner;
+public class NEW {
+    public static void main(String[] args) {
+
+
+
+
+
+
+        /*
+        for(int i=0;i<20;i++){
+            for(int j=0;j<34;j++){
+                for(int k=0;k<300;k++)
+                    if((i+j+k)==100 &&((5*i+3*j+k/3)==100)&&(k%3==0)){
+                        System.out.println("公鸡："+i+"\t母鸡："+j+"\t小鸡："+k);
+                    }
+            }
+        }
+        */
+
+
+        //斐波那契
+        /*Scanner sc=new Scanner(System.in);
+        System.out.println("请输入要打印的斐波那契个数");
+        int count=sc.nextInt();
+        int x=1;
+        int y=1;
+        int z=0;
+        for(int i=1;i<=count;i++){
+            if(i==1||i==2){
+                System.out.print(1+"\t");
+            }else{
+                z=x+y;
+                x=y;
+                y=z;//三个变量整体往后移动一个
+                System.out.print(z+"\t");
+
+
+            }
+
+        }
+        */
+    }
+
+}
+
+
+
+
+
+/*
 public class NEW{
     public static void main(String[] args){
 
@@ -21,7 +73,7 @@ public class NEW{
             System.out.println("会员号码输入错误");
         }
         */
-        int time=(int)(Math.random()*40);
+      /*  int time=(int)(Math.random()*40);
         if(time<20){
             System.out.println("恭喜进入决赛");
             String sex=((int)(Math.random()*2))==0?"nv":"nan";
@@ -30,24 +82,13 @@ public class NEW{
             }else{
                 System.out.println("欢迎进入男子组！");
             }
-
         }else{
             System.out.println("很遗憾！");
-
         }
 
-
-
-
     }
-
-
 }
-
-
-
-
-
+*/
 
 /*
 import java.util.Scanner;
