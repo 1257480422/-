@@ -6,11 +6,37 @@ import java.util.Scanner;
 public class NEW {
     public static void main(String[] args) {
 
+       int[ ] scores=new int[5];
+       int sum=0;
+       Scanner input =new Scanner(System.in);
+       System.out.println("请输入五位成员的成绩");
+       for(int i=0;i<scores.length;i++){
+           scores[i]=input.nextInt();
+           sum=sum+scores[i];
+       }
+       System.out.println("平均分是："+(double)sum/scores.length);
 
 
 
 
+/*
+        for (int i = 1; i <= 10; i++) {
+            System.out.print(getNumber(i) + "\t");
+        }
+    }
 
+   public static int getNumber(int number){
+        if(number==1||number==2){
+            return 1;
+        }else{
+            return getNumber(number-1)+getNumber(number-2);
+        }
+
+ */
+   }
+
+
+}
         /*
         for(int i=0;i<20;i++){
             for(int j=0;j<34;j++){
@@ -44,9 +70,9 @@ public class NEW {
 
         }
         */
-    }
 
-}
+
+
 
 
 
