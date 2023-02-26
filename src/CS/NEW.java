@@ -5,8 +5,35 @@ import javafx.scene.layout.BorderStrokeStyle;
 import java.util.Scanner;
 public class NEW {
     public static void main(String[] args) {
-
-       int[ ] scores=new int[5];
+        int[] array=new int[]{7,5,9,10,5,2,1,6,3,4};//数组的定义
+        //冒泡   小->大
+        for(int i=0;i<array.length;i++){//共比较多少次
+            for(int j=0;j<array.length-1-i;j++){//每次比较-1次
+                if(array[j]>array[j+1]){
+                    int tmp=array[j];
+                    array[j]=array[j+1];
+                    array[j+1]=tmp;
+                }
+            }
+        }
+        for(int i=0;i<array.length;i++) {
+            System.out.print(array[i]+"  ");
+        }
+        System.out.println();
+        //快速排序 第一次 第一个位置和每一个位置比较 小的放在第一个 以此类推
+        for(int i=0;i<array.length;i++) {
+            for(int j=i+1;j<array.length;j++){
+                if(array[i]>array[j]){
+                    int tmp=array[i];
+                    array[i]=array[j];
+                    array[j]=tmp;
+                }
+            }
+        }
+        for(int i=0;i<array.length;i++){
+            System.out.print(array[i]+"  ");
+        }
+      /* int[] scores=new int[5];
        int sum=0;
        Scanner input =new Scanner(System.in);
        System.out.println("请输入五位成员的成绩");
@@ -15,7 +42,7 @@ public class NEW {
            sum=sum+scores[i];
        }
        System.out.println("平均分是："+(double)sum/scores.length);
-
+*/
 
 
 
