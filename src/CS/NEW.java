@@ -4,7 +4,43 @@ import javafx.scene.layout.BorderStrokeStyle;
 
 import java.util.Scanner;
 public class NEW {
+    //一个java文件中可以定义多个class
+    //只能定义一个public class 并且类名必须和文件名相同！！！
+    //Java 中无char String代表字符串类型
+    //属性的定义 (类中相同的特征)
+    int StuNumber;
+    String name;
+    int age =20;
+    //方法的定义
+   public void study(){
+        System.out.println("我在学习！");
+    }
+    void eat(String food){
+        System.out.println("我在吃"+food);
+
+    }
+
     public static void main(String[] args) {
+        //创建对象 (类的具体表现)
+        NEW student=new NEW();
+        //使用属性
+        student.name="张三";
+        student.age=66;
+        student.StuNumber=201114;
+        System.out.println(student.name);
+        System.out.println(student.age);
+        System.out.println(student.StuNumber);
+        student.study();
+        student.eat("666");
+
+    }
+}
+class Teacher{
+
+}
+
+
+   /*
         int[] array=new int[]{7,5,9,10,5,2,1,6,3,4};//数组的定义
         //冒泡   小->大
         for(int i=0;i<array.length;i++){//共比较多少次
@@ -33,6 +69,12 @@ public class NEW {
         for(int i=0;i<array.length;i++){
             System.out.print(array[i]+"  ");
         }
+        System.out.println();
+    }
+
+
+}
+*/
       /* int[] scores=new int[5];
        int sum=0;
        Scanner input =new Scanner(System.in);
@@ -60,10 +102,8 @@ public class NEW {
         }
 
  */
-   }
 
 
-}
         /*
         for(int i=0;i<20;i++){
             for(int j=0;j<34;j++){
@@ -97,14 +137,6 @@ public class NEW {
 
         }
         */
-
-
-
-
-
-
-
-
 /*
 public class NEW{
     public static void main(String[] args){
