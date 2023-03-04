@@ -35,9 +35,6 @@ public class NEW {
 
     }
 }
-class Teacher{
-
-}
 
 
    /*
